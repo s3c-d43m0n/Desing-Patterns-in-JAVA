@@ -9,8 +9,6 @@ public class CryptoCurrencySeller implements Observer {
     private final Double sellPrice;
     private final Object stocks;
 
-
-
     public CryptoCurrencySeller(String name, CryptoCurrency coin, Double sellPrice, Double stocks){
         this.name=name;
         this.coin = coin;
@@ -29,6 +27,4 @@ public class CryptoCurrencySeller implements Observer {
             System.out.println("["+name+"]: Waiting for price rise till:"+ sellPrice);
         }
     }
-
-
 }
