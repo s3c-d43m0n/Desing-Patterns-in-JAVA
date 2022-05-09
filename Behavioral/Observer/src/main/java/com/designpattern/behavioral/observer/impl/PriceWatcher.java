@@ -12,6 +12,7 @@ public class PriceWatcher implements Observer {
         this.name=name;
         this.coin=coin;
         previousPrice=coin.getPrice();
+        coin.addObserver(this);
     }
 
     @Override
