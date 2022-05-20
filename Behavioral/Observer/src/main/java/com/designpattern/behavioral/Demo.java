@@ -15,11 +15,13 @@ public class Demo {
 
         //Buyer1 will buy 2.5 stocks if price is going down till $980.0
         CryptoCurrencyBuyer buyer1 = new CryptoCurrencyBuyer("Buyer 1",bitcoin,980.0, 2.5);
+
         //Buyer2 will buy 5.5 stocks if price is going down till $960.0
         CryptoCurrencyBuyer buyer2 = new CryptoCurrencyBuyer("Buyer 2",bitcoin,960.0, 5.5);
 
         //Seller1 will sell 3.0 stocks if price is going above $1020.0
         CryptoCurrencySeller seller1 = new CryptoCurrencySeller("Seller 1", bitcoin, 1020.0, 3.0);
+
         //Seller2 will sell 7.0 stocks if price is going above $1050.0
         CryptoCurrencySeller seller2 = new CryptoCurrencySeller("Seller 2", bitcoin, 1050.0, 7.0);
 
