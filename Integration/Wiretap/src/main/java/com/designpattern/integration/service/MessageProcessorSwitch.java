@@ -4,12 +4,12 @@ import com.designpattern.integration.model.Message;
 
 import java.util.concurrent.BlockingQueue;
 
-public class MessageProcessor extends Thread{
+public class MessageProcessorSwitch extends Thread{
     private BlockingQueue<Message> source;
     private BlockingQueue<Message> destination;
     private WiretapService wiretapService;
 
-    public MessageProcessor(BlockingQueue<Message> source, BlockingQueue<Message> destination){
+    public MessageProcessorSwitch(BlockingQueue<Message> source, BlockingQueue<Message> destination){
         this.source=source;
         this.destination=destination;
         //Create new wiretap service for intercepting the data

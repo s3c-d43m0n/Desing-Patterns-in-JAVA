@@ -1,7 +1,7 @@
 package com.designpattern.integration;
 
 import com.designpattern.integration.model.Message;
-import com.designpattern.integration.service.MessageProcessor;
+import com.designpattern.integration.service.MessageProcessorSwitch;
 import com.designpattern.integration.service.ReceiverService;
 import com.designpattern.integration.service.SenderService;
 
@@ -14,7 +14,7 @@ public class Demo {
         BlockingQueue<Message> destination = new LinkedBlockingQueue<>();
         try {
             // Message Processor Service
-            new MessageProcessor(source,destination);
+            new MessageProcessorSwitch(source,destination);
             // Receiver service
             new ReceiverService(destination);
             //New to wait till sender is finished with dumping data hence using join

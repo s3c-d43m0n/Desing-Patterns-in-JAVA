@@ -28,6 +28,6 @@ public class Message {
 
     @Override
     public String toString() {
-        return String.format("[ID:%s] Text:'%s', Dated: %s",id,text,messageDate);
+        return String.format("{ \"id\":%s, \"text\":\"%s\", \"dated\":\"%s\" }",id,text,messageDate);
     }
 }
