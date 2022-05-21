@@ -6,9 +6,9 @@ import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 
 public class SenderService extends Thread{
-    long messageId;
-    Random random;
-    BlockingQueue<Message> queue;
+    private long messageId;
+    private Random random;
+    private BlockingQueue<Message> queue;
 
     public SenderService(BlockingQueue<Message> queue){
         messageId=101;
@@ -18,7 +18,7 @@ public class SenderService extends Thread{
         this.start();
     }
 
-    Message getMessage(){
+    private Message getMessage(){
         Message message = new Message(messageId++, "Data "+random.nextInt(1000));
         System.out.println("[Sender]: generating "+message);
         return message;

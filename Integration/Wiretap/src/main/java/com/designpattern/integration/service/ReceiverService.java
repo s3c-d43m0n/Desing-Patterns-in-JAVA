@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class ReceiverService extends Thread{
 
-    BlockingQueue<Message> queue;
+    private BlockingQueue<Message> queue;
 
     public ReceiverService(BlockingQueue<Message> queue){
         this.queue=queue;
@@ -14,7 +14,7 @@ public class ReceiverService extends Thread{
         this.start();
     }
 
-    public void process(Message message){
+    private void process(Message message){
         System.out.println("[ReceiverService]: processing "+message);
     }
 
