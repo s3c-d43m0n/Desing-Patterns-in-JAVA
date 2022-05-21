@@ -3,7 +3,6 @@ package com.designpattern.integration.service;
 import com.designpattern.integration.model.Message;
 
 import java.util.Random;
-import java.util.UUID;
 import java.util.concurrent.BlockingQueue;
 
 public class SenderService extends Thread{
