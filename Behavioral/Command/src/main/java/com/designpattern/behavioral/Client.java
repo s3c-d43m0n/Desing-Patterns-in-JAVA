@@ -6,7 +6,7 @@ import com.designpattern.behavioral.command.impl.ActionLeft;
 import com.designpattern.behavioral.command.impl.ActionRight;
 import com.designpattern.behavioral.command.impl.ActionUp;
 import com.designpattern.behavioral.invoker.Controller;
-import com.designpattern.behavioral.invoker.impl.GameController;
+import com.designpattern.behavioral.invoker.impl.JoyStickGameController;
 import com.designpattern.behavioral.receiver.Player;
 import com.designpattern.behavioral.receiver.impl.VideoGamePlayer;
 
@@ -26,7 +26,7 @@ public class Client {
         Action right = new ActionRight(player);
 
         //Invoker
-        Controller controller = new GameController(up,down,left,right);
+        Controller controller = new JoyStickGameController(up,down,left,right);
 
         //Client Action
         try(BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in))){
