@@ -9,7 +9,7 @@ import com.designpattern.structural.adapter.XboxAdapter;
 import com.designpattern.structural.client.Client;
 import com.designpattern.structural.target.GamingConsole;
 
-public class Main {
+public class MainDriver {
     public static void main(String[] args) {
         Client client = new Client();
 
