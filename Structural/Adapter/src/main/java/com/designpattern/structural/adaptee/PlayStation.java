@@ -1,10 +1,10 @@
 package com.designpattern.structural.adaptee;
 
 public class PlayStation {
-    void playStationInputReceive(){
+    public void playStationInputReceive(){
         System.out.println("Receiving Input for PlayStation");
     }
-    void playStationOutputDisplay(){
+    public void playStationOutputDisplay(){
         System.out.println("Displaying Output from PlayStation");
     }
 }

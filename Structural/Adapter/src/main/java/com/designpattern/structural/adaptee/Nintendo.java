@@ -1,10 +1,10 @@
 package com.designpattern.structural.adaptee;
 
 public class Nintendo {
-    void nintendoInputReceive(){
+    public void nintendoInputReceive(){
         System.out.println("Receiving Input for Nintendo");
     }
-    void nintendoOutputDisplay(){
+    public void nintendoOutputDisplay(){
         System.out.println("Displaying Output from Nintendo");
     }
 }
