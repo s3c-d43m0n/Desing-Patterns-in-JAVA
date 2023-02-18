@@ -38,9 +38,9 @@ public class Client {
                 } else if("DOWN".equals(option)){
                     controller.down();
                 } else if("LEFT".equals(option)){
-                    controller.down();
+                    controller.left();
                 } else if("RIGHT".equals(option)){
-                    controller.down();
+                    controller.right();
                 } else{
                     System.out.print("Unknown option entered. Exiting");
                     break;
