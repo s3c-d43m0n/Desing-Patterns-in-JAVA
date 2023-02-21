@@ -1,7 +1,6 @@
 package com.designpattern.creational.object;
 
 public class EmailClient {
-
     private final Integer id;
 
     public EmailClient(int id){
